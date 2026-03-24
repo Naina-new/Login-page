@@ -2,22 +2,45 @@
 <html>
 <head>
     <title>Login</title>
-    <link href="style.css" rel="stylesheet" >
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-<div class="container">
-    <h2>Login</h2>
+<body class="d-flex justify-content-center align-items-center vh-100">
 
-    <form action="dashboard.html">
-        <input type="text" placeholder="Username" required>
-        <input type="password" placeholder="Password" required>
-        <button type="submit">Login</button>
-    </form>
+    <div class="card p-4 shadow" style="max-width: 400px; width: 100%;">
+        
+        <h2 class="text-center mb-4">Login</h2>
 
-    <p><a href="forgotten.html">Forgot Password?</a></p>
-    <p> Create a new account! <a href="register.html"> "Register"</a></p>
-</div>
+        <form action="dashboard.html">
+            
+            <div class="mb-3">
+                <label class="form-label">Username</label>
+                <input type="text" class="form-control" placeholder="Enter username" required>
+            </div>
 
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control" placeholder="Enter password" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Login</button>
+        
+        </form>
+
+        <div class="text-center mt-3">
+            <a href="forgot-password.html" class="forgot-link">Forgot Password?</a>
+        </div>
+
+        <div class="text-center mt-2">
+            Create a new account! 
+            <a href="register.html" class="forgot-link">Register</a>
+        </div>
+
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
